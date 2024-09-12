@@ -1,13 +1,448 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<meta charset="UTF-8" />
+	<link rel="shortcut icon" href="Assets/favicon.ico" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Hub Frontend Volunteers</title>
+	<link rel="stylesheet" href="Libraries/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="Css/style.css" />
 </head>
+
 <body>
-	<h1>Link
-	<a rel="stylesheet" href="politica.html">Política de Privacidade</a>
-</h1>
+	<!-- header  -->
+	<header class="header" id="header">
+		<nav class="nav container">
+			<a href="#" class="nav-logo">Hub Frontend Volunteers</a>
+
+			<div class="nav-menu" id="nav-menu">
+				<ul class="nav-list grid">
+					<li class="nav-item">
+						<a href="#home" class="nav-link"><i class="fa-solid fa-house nav-icon"></i> Início</a>
+					</li>
+					<li class="nav-item">
+						<a href="#about" class="nav-link"><i class="fa-solid fa-user nav-icon"></i> Sobre</a>
+					</li>
+					<li class="nav-item">
+						<a href="#skills" class="nav-link"><i class="fa-solid fa-file nav-icon"></i> Skills</a>
+					</li>
+					<li class="nav-item">
+						<a href="#services" class="nav-link"><i class="fa-solid fa-briefcase nav-icon"></i> Serviços</a>
+					</li>
+					<li class="nav-item">
+						<a href="#portfolio" class="nav-link"><i class="fa-solid fa-image nav-icon"></i> Projetos</a>
+					</li>
+					<li class="nav-item">
+						<a href="#contact" class="nav-link"><i class="fa-solid fa-message nav-icon"></i> Contato</a>
+					</li>
+				</ul>
+				<i class="fa-solid fa-xmark nav-close" id="nav-close"></i>
+			</div>
+
+			<div class="nav-btns">
+				<!-- theme btn  -->
+				<i class="fa-regular fa-moon change-theme" id="theme-button"></i>
+
+				<div class="nav-toggle" id="nav-toggle">
+					<i class="fa-solid fa-bars"></i>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main class="main">
+		<!-- Home Section -->
+		<section class="home section" id="home">
+			<div class="home-container container grid">
+				<div class="home-content grid">
+					<div class="home-social">
+						<a href="https://www.linkedin.com/company/voluntariado-hub-frontend/?viewAsMember=true"
+							target="_blank" class="home-social-icon">
+							<i class="fa-brands fa-linkedin-in"></i>
+						</a>
+					</div>
+
+					<div class="home-img">
+						<svg class="home-blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink">
+							<mask id="mask0" mask-type="alpha">
+								<path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+							</mask>
+							<g mask="url(#mask0)">
+								<path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+								<image class="home-blob-img" x="-15" y="-5" href="Assets/Icons/aboutimg.png" />
+							</g>
+						</svg>
+					</div>
+
+					<div class="home-data">
+						<h1 class="home-title">Bem-vindo ao Hub Frontend Volunteers</h1>
+						<h3 class="home-subtitle">Desenvolvimento Frontend Voluntário</h3>
+						<p class="home-description">
+							Criamos soluções web voluntárias para causas sociais, ajudando iniciativas sem fins
+							lucrativos a ganhar presença digital.
+						</p>
+						<a href="#contact" class="button button-flex">
+							Junte-se a nós <i class="fa-regular fa-envelope button-icon"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Sobre Mim Section -->
+		<section class="about section" id="about">
+			<h2 class="section-title">Sobre o Hub</h2>
+			<span class="section-subtitle">Nossa missão</span>
+
+			<div class="about-container container grid">
+				<img src="Assets/Icons/logo1.png" alt="" class="about-img" />
+
+				<div class="about-data">
+					<p class="about-description">
+						O <strong>Hub Frontend Volunteers</strong> é uma iniciativa criada para apoiar projetos sociais
+						através de soluções web de alta qualidade, feitas por desenvolvedores frontend voluntários.
+						Nosso objetivo é proporcionar uma presença digital forte e acessível para ONGs e pequenas
+						iniciativas, sem custo. Acreditamos no poder da tecnologia para transformar o mundo, e queremos
+						fazer parte dessa mudança.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- skills   -->
+		<section class="skills section" id="skills">
+			<h2 class="section-title">Skills</h2>
+			<span class="section-subtitle">Tecnoligias que utilizamos</span>
+			<div class="skills-content container">
+				<div class="skills-name">JavaScript</div>
+				<div class="skills-name">HTML</div>
+				<div class="skills-name">Bootstrap</div>
+				<div class="skills-name">CSS</div>
+				<div class="skills-name">SASS</div>
+				<div class="skills-name">MongoDB</div>
+				<div class="skills-name">Python</div>
+			</div>
+		</section>
+
+		<section class="services section" id="services">
+			<h2 class="section-title">Serviços Voluntários</h2>
+			<span class="section-subtitle">O que oferecemos</span>
+
+			<div class="services-container container grid">
+				<!-- Serviço 1 -->
+				<div class="services-content">
+					<div>
+						<i class="fa-solid fa-code services-icon"></i>
+						<h3 class="services-title">Desenvolvimento<br />Frontend</h3>
+					</div>
+					<span class="button button-flex button-small button-link services-button">
+						Saiba mais<i class="fa-solid fa-arrow-right button-icon"></i>
+					</span>
+					<div class="services-box">
+						<div class="services-box-content">
+							<h4 class="services-box-title">Landing<br />Pages</h4>
+							<i class="fa-solid fa-xmark services-box-close"></i>
+							<ul class="services-box-services grid">
+								<li class="services-box-list">
+									<i class="fa-regular fa-circle-check services-list-icon"></i>
+									<p>Web Design Responsivo</p>
+								</li>
+								<li class="services-box-list">
+									<i class="fa-regular fa-circle-check services-list-icon"></i>
+									<p>Interface de Usuário Interativa</p>
+								</li>
+								<li class="services-box-list">
+									<i class="fa-regular fa-circle-check services-list-icon"></i>
+									<p>Implementação de Sites</p>
+								</li>
+								<li class="services-box-list">
+									<i class="fa-regular fa-circle-check services-list-icon"></i>
+									<p>Templates Web Personalizados</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="portfolio section" id="portfolio">
+			<h2 class="section-title">Projetos Voluntários</h2>
+			<span class="section-subtitle">Trabalhos recentes</span>
+
+			<div class="portfolio-container container swiper-container">
+				<div class="swiper-wrapper">
+					<!-- Exemplo de projeto -->
+					<div class="portfolio-content grid swiper-slide">
+						<img src="Assets/Project1.jpg" alt="Tinna's Massas Artesanais" class="portfolio-img" />
+						<div class="portfolio-data">
+							<h3 class="portfolio-title">Landing Page - Tinna's Cozinha Artesanal</h3>
+							<p class="portfolio-description">Desenvolvemos uma landing page para Tinna's Cozinha
+								Artesanal, ajudando a captar clientes.</p>
+							<a href="https://simonepenido.github.io/tinnascozinhaartesanal/" target="_blank"
+								class="button button-flex button-small portfolio-button">Ver projeto<i
+									class="fa-solid fa-arrow-right button-icon"></i></a>
+						</div>
+					</div>
+					<!-- Outros projetos seguem a mesma estrutura -->
+					<div class="portfolio-content grid swiper-slide">
+						<img src="Assets/Project2.jpg" alt="Margarete Cabelereira" class="portfolio-img" />
+						<div class="portfolio-data">
+							<h3 class="portfolio-title">Landing Page - Margarete Cabelereira</h3>
+							<p class="portfolio-description">Desenvolvemos uma landing page para Margarete, profissional
+								autônoma.</p>
+							<a href="https://simonepenido.github.io/margarete_cabeleireira/" target="_blank"
+								class="button button-flex button-small portfolio-button">Ver projeto<i
+									class="fa-solid fa-arrow-right button-icon"></i></a>
+						</div>
+					</div>
+
+
+					<div class="portfolio-content grid swiper-slide">
+						<img src="Assets/Project3.jpg" alt="Luiz Chalola Cybersegurança" class="portfolio-img" />
+						<div class="portfolio-data">
+							<h3 class="portfolio-title">Landing Page - Luiz Chalola</h3>
+							<p class="portfolio-description">Desenvolvemos uma landing page para Luiz, um profissional
+								atuante na área de cybersegurança.</p>
+							<a href="https://simonepenido.github.io/Luiz_Chalola/" target="_blank"
+								class="button button-flex button-small portfolio-button">Ver projeto<i
+									class="fa-solid fa-arrow-right button-icon"></i></a>
+						</div>
+					</div>
+
+
+					<div class="portfolio-content grid swiper-slide">
+						<img src="Assets/Project4.png" alt="David Adestrador de Cães" class="portfolio-img" />
+						<div class="portfolio-data">
+							<h3 class="portfolio-title">Página Web - David Adestrador de Cães</h3>
+							<p class="portfolio-description">Desenvolvemos uma página web para David, um profissional
+								autônomo.</p>
+							<a href="https://simonepenido.github.io/David_Adestrador_De_Caes/index.html" target="_blank"
+								class="button button-flex button-small portfolio-button">Ver projeto<i
+									class="fa-solid fa-arrow-right button-icon"></i></a>
+						</div>
+					</div>
+
+
+				</div>
+				<div class="swiper-angles">
+					<div class="swiper-button-next">
+						<i class="fa-solid fa-angle-right swiper-icon"></i>
+					</div>
+					<div class="swiper-button-prev">
+						<i class="fa-solid fa-angle-left swiper-icon"></i>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</section>
+
+		</div>
+		<div class="swiper-angles">
+			<div class="swiper-button-next">
+				<i class="fa-solid fa-angle-right swiper-icon"></i>
+			</div>
+			<div class="swiper-button-prev">
+				<i class="fa-solid fa-angle-left swiper-icon"></i>
+			</div>
+		</div>
+		<div class="swiper-pagination"></div>
+		</div>
+		</section>
+		<section class="project-contact section">
+			<div class="project-bg">
+				<div class="project-container container grid">
+					<div class="project-data">
+						<h2 class="project-title">Você precisa de um novo projeto?</h2>
+						<p class="project-description">
+							Entre em contato conosco.
+						</p>
+						<a href="#contact" class="button button-flex button-white">Contato
+							<i class="fa-regular fa-comment-dots project-icon button-icon"></i>
+						</a>
+					</div>
+					<img src="Assets/Icons/contactme.png" alt="" class="project-img" />
+				</div>
+			</div>
+		</section>
+		<!-- testimonial -->
+		<section class="testimonial section">
+			<h2 class="section-title">Depoimentos</h2>
+			<span class="section-subtitle">Sobre o nosso trabalho:</span>
+
+			<div class="testimonial-container container swiper-container">
+				<div class="swiper-wrapper">
+					<!-- testimonial 1  -->
+					<div class="testimonial-content swiper-slide">
+						<div class="testimonial-data">
+							<div class="testimonial-header">
+								<img src="Assets/Icons/testimonial1.png" alt="" class="testimonial-img" />
+
+								<div>
+									<h3 class="testimonial-name">Junara</h3>
+									<span class="testimonial-client">Cliente</span>
+								</div>
+							</div>
+
+							<div>
+								<i class="fa-regular fa-star testimonial-icon"></i>
+								<i class="fa-regular fa-star testimonial-icon"></i>
+								<i class="fa-regular fa-star testimonial-icon"></i>
+								<i class="fa-regular fa-star testimonial-icon"></i>
+								<i class="fa-regular fa-star testimonial-icon"></i>
+							</div>
+						</div>
+						<p class="testimonial-description">
+							Contratar a desenvolvedora front-end foi uma decisão incrível para divulgação do meu
+							trabalho. Ela
+							entendeu minhas necessidades desde o início e entregou um trabalho excepcionalmente bem
+							feito. Foi
+							extremamente profissional e ágil em responder às minhas solicitações.
+						</p>
+					</div>
+					<!-- testimonia 2 -->
+					<div class="testimonial-content swiper-slide">
+						<div class="testimonial-data">
+							<div class="testimonial-header">
+								<img src="Assets/Icons/testimonial2.png" alt="" class="testimonial-img" />
+
+								<div>
+									<h3 class="testimonial-name">Cássia</h3>
+									<span class="testimonial-client">Cliente</span>
+								</div>
+							</div>
+
+							<div>
+								<i class="fa-regular fa-star testimonial-icon"></i>
+								<i class="fa-regular fa-star testimonial-icon"></i>
+								<i class="fa-regular fa-star testimonial-icon"></i>
+								<i class="fa-regular fa-star testimonial-icon"></i>
+								<i class="fa-regular fa-star testimonial-icon"></i>
+							</div>
+						</div>
+						<p class="testimonial-description">
+							Estou satisfeita com o trabalho da desenvolvedora front-end. Ela foi além das nossas
+							expectativas,
+							trazendo criatividade e inovação para o projeto. A comunicação foi transparente e eficiente
+							durante todo o
+							processo de desenvolvimento.
+						</p>
+					</div>
+					<!-- testimonial  3-->
+					<div class="testimonial-content swiper-slide">
+						<div class="testimonial-data">
+							<div class="testimonial-header">
+								<img src="Assets/Icons/testimonial3.png" alt="" class="testimonial-img" />
+
+								<div>
+									<h3 class="testimonial-name">Gil</h3>
+									<span class="testimonial-client">Professora</span>
+								</div>
+							</div>
+
+							<div>
+								<i class="fa-regular fa-star testimonial-icon"></i>
+								<i class="fa-regular fa-star testimonial-icon"></i>
+								<i class="fa-regular fa-star testimonial-icon"></i>
+								<i class="fa-regular fa-star testimonial-icon"></i>
+								<i class="fa-regular fa-star testimonial-icon"></i>
+							</div>
+						</div>
+						<p class="testimonial-description">
+							Simone foi minha aluna da turma 10 do curso Elas na Tech. Ao longo das aulas, pude
+							testemunhar o
+							excepcional comprometimento e dedicação da Simone em seu desenvolvimento profissional. Ela é
+							uma aluna
+							extremamente empenhada, sempre buscando a excelência e superando os desafios propostos com
+							maestria.
+
+						</p>
+					</div>
+				</div>
+
+				<div class="swiper-pagination swiper-pagination-testimonial"></div>
+			</div>
+		</section>
+
+		<!-- contact me  -->
+		<section class="contact section" id="contact">
+			<h2 class="section-title">CONTATO</h2>
+			<span class="section-subtitle">Entre em contato</span>
+
+			<div class="contact-container container grid">
+				<div>
+					<div class="contact-info">
+						<i class="fa-regular fa-envelope contact-icon"></i>
+						<div>
+							<h3 class="contact-title">Email</h3>
+							<a href="mailto:simonedev.ia@gmail.com" target="_blank"
+								class="contact-subtitle">simonedev.ia@gmail.com</a>
+						</div>
+					</div>
+					<div class="contact-info">
+						<i class="fa-brands fa-linkedin-in contact-icon"></i>
+						<div>
+							<h3 class="contact-title">Linkedin</h3>
+							<a class="contact-subtitle" href="https://www.linkedin.com/company/voluntariado-hub-frontend/?viewAsMember=true"
+								target="_blank">/in/voluntariado-hub-frontend</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- footer  -->
+		<footer class="footer">
+			<div class="footer-bg">
+				<div class="footer-container container grid">
+					<div>
+						<h1 class="footer-title">Hub Frontend Volunteer</h1>
+						<span class="footer-subtitle">Desenvolvimento Frontend Voluntário</span>
+					</div>
+					<ul class="footer-links">
+						<li>
+							<a href="#services" class="footer-link">Serviços</a>
+						</li>
+						<li>
+							<a href="#portfolio" class="footer-link">Portfolio</a>
+						</li>
+						<li>
+							<a href="#contact" class="footer-link">Contato</a>
+						</li>
+					</ul>
+
+					<div class="footer-socials">
+						<a href="https://www.linkedin.com/company/voluntariado-hub-frontend/?viewAsMember=true" target="_blank" class="footer-social">
+							<i class="fa-brands fa-linkedin-in"></i>
+						</a>
+						<a href="https://github.com/SimonePenido" target="_blank" target="_blank" class="footer-social">
+							<i class="fa-brands fa-github"></i>
+						</a>
+						<a href="https://www.instagram.com/simoneitads/" target="_blank" class="footer-social">
+							<i class="fa-brands fa-instagram"></i>
+						</a>
+					</div>
+				</div>
+				<p class="footer-copy">By Simone Penido - @simoneitads</p>
+			</div>
+		</footer>
+	</main>
+
+	<a href="#home" class="scrollup" id="scroll-up">
+		<i class="fa-solid fa-arrow-up scroll-up-icon"></i>
+	</a>
+	<script src="Libraries/swiper-bundle.min.js"></script>
+	<script src="https://kit.fontawesome.com/9b634c15bd.js" crossorigin="anonymous"></script>
+	<script src="script.js"></script>
 </body>
-</html>
+
+</html>F
